@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Cinzel', serif;
+}
+
+body {
+    background: url(./assets/crew/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header, .navbar, .nav {
+    display: flex;
+}
+.header {
+    justify-content: space-between;
+    margin-left: 4rem;
+    padding-top: 5vh;
+    align-items: center;
+}
+.navbar {
+    width: 60vw;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    background-color: rgba(255, 255, 255, 0.015);
+    backdrop-filter: blur(10px);
+    height: 6em;
+}
+.nav{
+    color: white;
+    text-decoration: none;
+    gap: .5vw;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    padding: 2.3em .5em;
+    transition: transform .2s linear;
+}  
+.nav:hover {
+    transform: scale(1.2);
+}
+
+.order {
+    font-weight: 700;
+}
+.nav-name {
+    font-weight: 300;
+}
+
+.middle-line {
+    position: relative;
+    height: 2px;
+    width: 50vw;
+    left: 2vw;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.188);
+    border-radius: 2px;
+}
+
+/* =============== main ======================= */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 3vh 5vw 0 7vw;
+}
+.section{
+    flex-basis: 60%;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .1em;
+}
+.subtitle {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 7vh;
+    text-transform: uppercase;
+}
+h2 {
+    margin-top: 1em;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+h3{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.5em;
+    font-family: 'Cinzel', sans-serif;
+}
+
+h1 {
+    font-family: 'Cinzel', sans-serif;
+    font-size: 5em;
+    font-weight: 300;
+}
+p {
+    margin-top: 1em;
+    font-weight: 300;
+    line-height: 1.8em;
+}
+.dot-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+
+    width: 10vw;
+}
+.dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.281);
+    cursor: pointer;
+}
+.dot-active {
+    background-color: white;
+}
+.img-crew{ 
+    height: 60vh;
+    object-fit: contain;
+}
+

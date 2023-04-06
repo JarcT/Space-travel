@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Cinzel', serif;
+}
+
+body {
+    background: url(./assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header, .navbar, .nav {
+    display: flex;
+}
+.header {
+    justify-content: space-between;
+    margin-left: 4rem;
+    padding-top: 5vh;
+    align-items: center;
+}
+.navbar {
+    width: 60vw;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    background-color: rgba(255, 255, 255, 0.015);
+    backdrop-filter: blur(10px);
+    height: 6em;
+}
+.nav{
+    color: white;
+    text-decoration: none;
+    gap: .5vw;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    padding: 2.3em .5em;
+    transition: transform .2s linear;
+}  
+.nav:hover {
+    transform: scale(1.2);
+}
+
+.order {
+    font-weight: 700;
+}
+.nav-name {
+    font-weight: 300;
+}
+
+.middle-line {
+    position: relative;
+    height: 2px;
+    width: 50vw;
+    left: 2vw;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.188);
+    border-radius: 2px;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+}
+.section{
+    flex-basis: 40%;
+    margin-top: 24vh;
+    margin-left: 10vw;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .1em;
+}
+h3{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+h1 {
+    font-family: 'Cinzel', sans-serif;
+    font-size: 9em;
+    font-weight: 300;
+}
+p {
+    font-weight: 300;
+    line-height: 1.8em;
+}
+
+.explore-container {
+    height: 15rem;
+    width: 15rem;
+    padding: 3vh;
+    margin-top:38vh;
+    margin-right: 18vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform .2s linear;
+}
+.explore-container:hover {
+    transform: scale(1.1);
+}
+
+.explore {
+    font-size: 2.5rem;
+}
+

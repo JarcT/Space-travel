@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Cinzel', serif;
+}
+
+body {
+    background: url(./assets/technology/background-technology-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header, .navbar, .nav {
+    display: flex;
+}
+.header {
+    justify-content: space-between;
+    margin-left: 4rem;
+    padding-top: 5vh;
+    align-items: center;
+}
+.navbar {
+    width: 60vw;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    background-color: rgba(255, 255, 255, 0.015);
+    backdrop-filter: blur(10px);
+    height: 6em;
+}
+.nav{
+    color: white;
+    text-decoration: none;
+    gap: .5vw;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    padding: 2.3em .5em;
+    transition: transform .2s linear;
+}  
+.nav:hover {
+    transform: scale(1.2);
+}
+
+.order {
+    font-weight: 700;
+}
+.nav-name {
+    font-weight: 300;
+}
+
+.middle-line {
+    position: relative;
+    height: 2px;
+    width: 50vw;
+    left: 2vw;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.188);
+    border-radius: 2px;
+}
+main {
+    display: flex;
+    justify-content: space-around;
+    margin: 2vh 3vw 0 3vw;
+    height: 60vh;
+}
+.section{
+    flex-basis: 50%;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .1em;
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-template-rows: 2fr 5fr;
+    grid-template-areas: 
+    "subtitle subtitle "
+    "num text "
+    ;
+}
+.subtitle {
+    display: flex;
+    margin-left: 3rem;
+    gap: 1em; 
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+h3{
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.5em;
+}
+
+h1 {
+    font-family: 'Cinzel', sans-serif;
+    font-size: 5em;
+    font-weight: 300;
+}
+p {
+    font-weight: 300;
+    line-height: 1.8em;
+}
+
+.subtitle {
+    grid-area: subtitle;
+}
+.num-container{
+    grid-area: num;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.num {
+    font-family: 'Cinzel', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 3em;
+    cursor: pointer;
+}
+.num-active {
+    background-color: rgba(255, 255, 255, 0.753);
+    color: #0B0E17;
+    font-weight: 500;
+}
+.text-container {
+    grid-area: text;
+}
+
+.tech-image {
+    margin-top: 5vh;
+}
+.tech-image > img {
+    height: 60vh;
+}
+
